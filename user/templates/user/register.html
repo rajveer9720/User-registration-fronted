@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'user/Css/rgcss.css'%}">
+</head>
+<body id="bg" style="background-image:url('{% static 'user/images/pic.jpg'%}');">
+    <marquee behavior="slide" direction="right" loop="1000"><h2>Register Now</h2></marquee>
+    <form  action="register" method="post" class="box">
+    {% csrf_token %}    
+        <h3>REGISTER HERE</h3>
+        <input type="text" id="fname" name="fname" placeholder="Enter Your first Name"><br>
+        <input type="text"id="lname" name="lname" placeholder="Enter Your last Name"><br>
+        <input type="text"id="email" name="email" placeholder="Enter Your email Id"><br>
+        <input type="text"id="username" name="username" placeholder="Enter Your username"><br>
+        <input type="text"id="pass1" name="pass1" placeholder="Enter Your Password"><br>
+        <input type="text"id="pass2" name="pass2" placeholder="Enter Your confirm password"><br> <br>
+        <input type="submit"id= name="Submit" class="sub">
+
+    </form>
+    
+</body>
+</html>

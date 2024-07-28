@@ -1,0 +1,135 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+}
+
+.imgcontainer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imgcontainer img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .imgcontainer img {
+        width: 70%;
+    }
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 255, 81);
+  border-radius: 14px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: red;
+  color: white;
+  padding: 11px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 26%;
+  border: 2px solid yellow;
+  border-radius: 14px;
+}
+
+
+.button{
+  color: #04AA6D;
+}
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+  
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.Aryan {
+  width: 8%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  margin: 22px 170px 54px 150px;
+  background-color: black;
+  width: 284px;
+  padding: 18px;
+  position: absolute;
+  top: 27%;
+  left: 25%;
+  border: 2px solid rgb(82, 82, 189);
+  border-radius: 14px;
+}
+
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 8px;
+  margin: -40px 37px;
+}
+span.newuser{
+  float: left;
+  padding-top: 8px;
+  margin: -40px 37px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 368px)
+{
+
+
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+}
+}
